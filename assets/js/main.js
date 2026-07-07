@@ -6,8 +6,8 @@ const MD = {
   berdun:{
     name:'Berdún', price:'Desde $4,670,000', m2c:'228.66', m2t:'144', beds:'4', baths:'4',
     ew:'★ El más vendido · Cochera techada · Lote 8×18',
-    desc:'El Berdún es el modelo más completo: baño y vestidor en TODAS las habitaciones, bar/asador en patio y preparación Starlink. Cochera techada con espacio para 3 autos. Sin compromisos.',
-    feats:['Preparación Starlink','Bar / Asador en patio','Baño y vestidor en todas las hab.','4 recámaras totales','Cuarto de lavado en planta alta','WC independiente del área de ducha','Cochera techada · 3 autos'],
+    desc:'El Berdún es el modelo más completo: baño y vestidor en TODAS las habitaciones, bar/asador en patio y preparación Starlink. Cochera techada con espacio para 3 autos.',
+    feats:['Preparación Starlink','Bar / Asador en patio','Baño y vestidor en todas las hab.','3 recámaras totales','Cuarto de lavado en planta alta','WC independiente del área de ducha','Cochera techada · 3 autos'],
     media:[
       {type:'img', src:'assets/img/berdun_fachada.jpg',          caption:'Fachada Berdún'},
       {type:'img', src:'assets/img/berdun_planta.jpg',        caption:'Distribución en planta'},
@@ -18,7 +18,7 @@ const MD = {
   mirambel:{
     name:'Mirambel', price:'Desde $4,830,000', m2c:'225.66', m2t:'144', beds:'4', baths:'4',
     ew:'Cochera techada · Doble altura · Lote 8×18',
-    desc:'El Mirambel impresiona con doble altura en sala y habitación completa en planta baja con baño propio. Cochera techada para 3 autos. Ideal para familias que no quieren sacrificar nada.',
+    desc:'El Mirambel impresiona con su recibidor en doble altura y habitación completa en planta baja con baño propio. Cochera techada para 3 autos. Ideal para familias que no quieren sacrificar nada.',
     feats:['Doble altura en sala','Habitación en PB con baño completo','WC independiente en rec. principal','4 recámaras totales','Cuarto de lavado en planta alta','Vestidor completo en rec. principal','Cochera techada · 3 autos'],
     media:[
       {type:'img', src:'assets/img/mirambel_fachada.jpg',           caption:'Fachada Mirambel'},
