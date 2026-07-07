@@ -4,7 +4,7 @@
 
 const MD = {
   berdun:{
-    name:'Berdún', price:'Desde $4,670,000', m2c:'228.66', m2t:'144', beds:'4', baths:'4',
+    name:'Berdún', price:'Desde $4,670,000', m2c:'228.66', m2t:'144', beds:'3', baths:'3.5',
     ew:'★ El más vendido · Cochera techada · Lote 8×18',
     desc:'El Berdún es el modelo más completo: baño y vestidor en TODAS las habitaciones, bar/asador en patio y preparación Starlink. Cochera techada con espacio para 3 autos.',
     feats:['Preparación Starlink','Bar / Asador en patio','Baño y vestidor en todas las hab.','3 recámaras totales','Cuarto de lavado en planta alta','WC independiente del área de ducha','Cochera techada · 3 autos'],
@@ -28,7 +28,7 @@ const MD = {
     ]
   },
   arago:{
-    name:'Aragó', price:'Desde $4,360,000', m2c:'194.40', m2t:'144', beds:'3+', baths:'3',
+    name:'Aragó', price:'Desde $4,360,000', m2c:'194.40', m2t:'144', beds:'3', baths:'3.5',
     ew:'Modelo intermedio · Lote 8×18',
     desc:'El Aragó añade sala/estudio, terraza trasera y cuarto de lavado en planta alta. El modelo con mayor versatilidad para personalización de espacios.',
     feats:['Sala / Estudio adicional','Terraza trasera','Cuarto de lavado en planta alta','Baño completo en todas las hab.','Vestidor amplio en recámara principal','Regadera independiente del WC'],
@@ -40,7 +40,7 @@ const MD = {
     ]
   },
   ambel:{
-    name:'Ambel', price:'Desde $4,050,000', m2c:'173.05', m2t:'144', beds:'3+', baths:'3',
+    name:'Ambel', price:'Desde $4,050,000', m2c:'173.05', m2t:'144', beds:'3', baths:'3.5',
     ew:'Modelo base · Lote 8×18',
     desc:'El Ambel es el punto de entrada al portafolio premium de Valle de Aragón. Dos plantas bien distribuidas, cocina con alacena y baño completo en todas las habitaciones.',
     feats:['Cocina con alacena','Baño en todas las habitaciones','Puertas piso a techo','Área de lavado en patio','Vestidor en recámara principal','Piso rectificado 80×80'],
