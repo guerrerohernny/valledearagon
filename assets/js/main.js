@@ -227,3 +227,56 @@ document.addEventListener('DOMContentLoaded', ()=>{
   // mzButtons initialized after INVENTARIO loads (cotizador.js runs after main.js)
   setTimeout(initMzButtons, 50);
 });
+
+
+// ============================================================
+// GALERÍA DE VIDEOS — scroll automático + click para abrir
+// ============================================================
+const VIDEO_GALLERY = [
+  {yt:'TdkvFp07gLQ', title:'Berdún · Recorrido',              modelo:'Berdún'},
+  {yt:'jMkI9hVNl2o', title:'Berdún · Detalles',                modelo:'Berdún'},
+  {yt:'r7bnAp0-jGw', title:'Mirambel · Recorrido',             modelo:'Mirambel'},
+  {yt:'4V96E8r4UJw', title:'Mirambel · Detalles',              modelo:'Mirambel'},
+  {yt:'OvBgroU7dAA', title:'Aragó · Recorrido',                modelo:'Aragó'},
+  {yt:'ATJ7PG_w-Jo', title:'Aragó · Detalles',                 modelo:'Aragó'},
+  {yt:'Xm2srcK8lRo', title:'Ambel · Recorrido',                modelo:'Ambel'},
+  {yt:'S1h5ELU3JCM', title:'Ambel · Imagina tu nuevo hogar',   modelo:'Ambel'},
+  {yt:'8iqHL2o2zXU', title:'Morello · 5 cosas que enamoran',   modelo:'Morello'},
+  {yt:'8u64LvgJAas', title:'Morello · Nuestro equipo titular', modelo:'Morello'},
+];
+
+function buildVideoGallery(){
+  const track = document.getElementById('vgTrack');
+  if(!track) return;
+  // Duplicate items for seamless infinite scroll
+  const items = [...VIDEO_GALLERY, ...VIDEO_GALLERY];
+  track.innerHTML = items.map((v,i) => `
+    <div class="vg-card" onclick="openVideoGallery('${v.yt}','${v.title.replace(/'/g,"\\'")}')">
+      <img src="https://img.youtube.com/vi/${v.yt}/hqdefault.jpg" alt="${v.title}" class="vg-thumb" loading="lazy">
+      <div class="vg-play"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="vg-info">
+        <div class="vg-modelo">${v.modelo}</div>
+        <div class="vg-title">${v.title.split('·')[1]?.trim() || v.title}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openVideoGallery(ytId, title){
+  const lb = document.createElement('div');
+  lb.className = 'vg-lightbox';
+  lb.innerHTML = `
+    <div class="vg-lb-bg" onclick="this.parentElement.remove()"></div>
+    <div class="vg-lb-content">
+      <button class="vg-lb-close" onclick="this.closest('.vg-lightbox').remove()">✕</button>
+      <div class="vg-lb-frame">
+        <iframe src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="vg-lb-title">${title}</div>
+    </div>`;
+  document.body.appendChild(lb);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  buildVideoGallery();
+});
