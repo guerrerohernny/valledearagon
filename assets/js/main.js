@@ -48,7 +48,7 @@ const MD = {
       {type:'img', src:'assets/img/ambel_fachada.jpg',          caption:'Fachada Ambel'},
       {type:'img', src:'assets/img/ambel_planta.jpg',        caption:'Distribución en planta'},
       {type:'yt', src:'Xm2srcK8lRo', caption:'Recorrido'},
-      {type:'yt', src:'8iqHL2o2zXU', caption:'Detalles'},
+      {type:'yt', src:'S1h5ELU3JCM', caption:'Imagina tu nuevo hogar'},
     ]
   },
   morello:{
@@ -59,6 +59,8 @@ const MD = {
     media:[
       {type:'img', src:'assets/img/morello_fachada.jpg', caption:'Fachada Morello'},
       {type:'img', src:'assets/img/morello_planta.jpg', caption:'Distribución en planta'},
+      {type:'yt', src:'8iqHL2o2zXU', caption:'5 cosas que enamoran'},
+      {type:'yt', src:'8u64LvgJAas', caption:'Nuestro equipo titular'},
     ]
   },
 };
