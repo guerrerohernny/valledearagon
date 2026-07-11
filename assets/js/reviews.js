@@ -21,12 +21,12 @@
 // ============================================================
 
 const FIREBASE_CONFIG = {
-  apiKey:            "PEGA_TU_apiKey_AQUI",
-  authDomain:        "PEGA_TU_authDomain_AQUI",
-  projectId:         "PEGA_TU_projectId_AQUI",
-  storageBucket:     "PEGA_TU_storageBucket_AQUI",
-  messagingSenderId: "PEGA_TU_messagingSenderId_AQUI",
-  appId:             "PEGA_TU_appId_AQUI",
+  apiKey:            "AIzaSyCbv3WZse4XkFHYd87-YMIbocGgVqRAKdo",
+  authDomain:        "valle-de-aragon-e870a.firebaseapp.com",
+  projectId:         "valle-de-aragon-e870a",
+  storageBucket:     "valle-de-aragon-e870a.firebasestorage.app",
+  messagingSenderId: "859555959910",
+  appId:             "1:859555959910:web:becb4222a851f3375909a7",
 };
 
 // ── Estado ──
